@@ -1,0 +1,395 @@
+2024-02-26 11:02:10 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:02:10 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:02:10 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:02:10 [scrapy.extensions.telnet] INFO: Telnet Password: 024954e8f53a5de6
+2024-02-26 11:02:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-02-26 11:02:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:02:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:02:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:02:10 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:02:10 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:02:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-02-26 11:02:10 [wattpad] INFO: Spider opened: wattpad
+2024-02-26 11:02:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:02:13 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-02-26 11:02:13 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2024-02-26 11:02:13 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2024-02-26 11:02:21 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:02:21 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:02:21 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:02:21 [scrapy.extensions.telnet] INFO: Telnet Password: b593d907fca643ae
+2024-02-26 11:02:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:02:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:02:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:02:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:02:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:02:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:02:21 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:02:21 [default] INFO: Spider opened: default
+2024-02-26 11:03:06 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:03:06 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:03:06 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:03:06 [scrapy.extensions.telnet] INFO: Telnet Password: 36815f12cace86b9
+2024-02-26 11:03:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:03:06 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:03:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:03:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:03:06 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:03:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:03:06 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:03:06 [default] INFO: Spider opened: default
+2024-02-26 11:05:52 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:05:52 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:05:52 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:05:52 [scrapy.extensions.telnet] INFO: Telnet Password: 1e696498a6883cda
+2024-02-26 11:05:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:05:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:05:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:05:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:05:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:05:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:05:53 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:05:53 [default] INFO: Spider opened: default
+2024-02-26 11:06:26 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:06:26 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:06:26 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:06:26 [scrapy.extensions.telnet] INFO: Telnet Password: baed23683e127528
+2024-02-26 11:06:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:06:26 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:06:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:06:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:06:26 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:06:26 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:06:26 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:06:26 [default] INFO: Spider opened: default
+2024-02-26 11:06:46 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:06:46 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:06:46 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:06:46 [scrapy.extensions.telnet] INFO: Telnet Password: 32864685c61e955e
+2024-02-26 11:06:46 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:06:46 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:06:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:06:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:06:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:06:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:06:46 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:06:46 [default] INFO: Spider opened: default
+2024-02-26 11:08:04 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 11:08:04 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 11:08:04 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 11:08:04 [scrapy.extensions.telnet] INFO: Telnet Password: 632dde821616d46b
+2024-02-26 11:08:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 11:08:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 11:08:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 11:08:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 11:08:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 11:08:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 11:08:05 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 11:08:05 [default] INFO: Spider opened: default
+2024-02-26 14:17:51 [scrapy.utils.log] INFO: Scrapy 2.11.0 started (bot: spider)
+2024-02-26 14:17:51 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.2, Twisted 22.10.0, Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.0.10 1 Aug 2023), cryptography 41.0.3, Platform Windows-10-10.0.22631-SP0
+2024-02-26 14:17:51 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-02-26 14:17:51 [scrapy.extensions.telnet] INFO: Telnet Password: 8b87cd9612a7d486
+2024-02-26 14:17:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2024-02-26 14:17:51 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'spider',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'LOG_FILE': 'spider.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spider.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['spider.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'}
+2024-02-26 14:17:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'spider.middlewares.SpiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-02-26 14:17:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-02-26 14:17:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['spider.pipelines.WattpadPipeline']
+2024-02-26 14:17:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-02-26 14:17:51 [scrapy.core.engine] INFO: Spider opened
+2024-02-26 14:17:51 [default] INFO: Spider opened: default
