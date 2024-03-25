@@ -72,9 +72,9 @@ RETRY_TIMES = 1  # 增加重试次数到 2
 ITEM_PIPELINES = {
    # "spider.pipelines.ShortstoryPipeline": 300,
    # "spider.pipelines.WattpadPipeline": 300,
-   # "spider.pipelines.RoyalRoadPipeline": 300,
+   "spider.pipelines.RoyalRoadPipeline": 300,
    # "spider.pipelines.BiQuGePipeline": 300,
-   "spider.pipelines.LiteroticaPipeline": 300,
+   # "spider.pipelines.LiteroticaPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

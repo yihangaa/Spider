@@ -85,7 +85,7 @@ class RoyalRoadPipeline:
         # 获取分类名称，用于创建文件夹
         category = item['category']
         # 定义文件夹路径
-        dir_path = os.path.join('..', '..', 'novel', 'royalroad', category)
+        dir_path = os.path.join('..', '..', 'novel', 'nifty', category)
         os.makedirs(dir_path, exist_ok=True)  # 创建文件夹，如果已存在则忽略
 
         # 定义JSON文件的路径
@@ -102,7 +102,7 @@ class RoyalRoadPipeline:
                 raise FileNotFoundError
         except (FileNotFoundError, json.JSONDecodeError):
             # 文件不存在或不是有效的JSON
-            data = {'global_outline': item['global_outline'], 'tags': item['tags'], 'chapters': []}
+            data = {'tags': item['tags'], 'chapters': []}
 
         # 构建当前章节的信息
         current_chapter = {
