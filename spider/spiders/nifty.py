@@ -5,7 +5,7 @@ from spider.items import RoyalRoad
 class MySpider(scrapy.Spider):
     name = 'nifty'
     start_urls = ['https://www.nifty.org/nifty/']
-
+#
     def parse(self, response):
         categories = response.xpath('//*[@id="myNavbar"]/ul[1]/li[1]/ul/li/a')
         for li in categories[:4]:
